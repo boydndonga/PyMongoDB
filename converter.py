@@ -45,7 +45,8 @@ def save_json_data():
 
 #retrieve data from db
 def get_db_data():
-    my_cursor = infos.find({"First Name": "Mohamed"}) # get all data
+    my_cursor = infos.find({}) # get all data
+    my_cursor = infos.find({"First Name": "Mohamed"}) # get specific data
     print(my_cursor)
     # for d in my_cursor:
     #     print(my_cursor)
