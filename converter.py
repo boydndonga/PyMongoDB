@@ -39,7 +39,8 @@ def read_json():
 def save_json_data():
     output = read_json()
     new_result = infos.insert_many(output)
-    print('Multiple data: {0}'.format(new_result.inserted_ids))
+    print('data saved succesfully')
+    # print('Multiple data: {0}'.format(new_result.inserted_ids))
 
 
 read_CSV(file,json_file)
