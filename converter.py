@@ -1,5 +1,8 @@
 import csv
 import json
+from pymongo import mongo_client
+
+
 
 file = 'cleaned.csv'
 json_file = 'output.json'
