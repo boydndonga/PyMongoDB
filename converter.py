@@ -26,17 +26,18 @@ def read_CSV(file, json_file):
 def convert_write_json(data, json_file):
     with open(json_file, "w") as f:
         f.write(json.dumps(data, sort_keys=False, indent=4, separators=(',', ': '))) #for pretty
-    read_json()
+        save_json_data()
 
 #read from json
 def read_json():
     with open(json_file) as f:
         data = json.load(f)
-        print(data)
+        return data
 
 
 #save to database
 def save_json_data():
+    output = read_json()
     new_result = infos.insert_many(output)
     print('Multiple data: {0}'.format(new_result.inserted_ids))
 
