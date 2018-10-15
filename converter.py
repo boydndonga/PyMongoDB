@@ -6,6 +6,8 @@ from pymongo import mongo_client
 
 file = 'cleaned.csv'
 json_file = 'output.json'
+client = MongoClient('mongodb://localhost:27017')
+db = client.pymongo_dev
 
 #Read CSV File
 def read_CSV(file, json_file):
