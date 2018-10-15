@@ -1,5 +1,6 @@
 from flask import Flask
 from flask_pymongo import PyMongo
+from config import config_options
 
 app = Flask(__name__)
 db = PyMongo()
@@ -20,4 +21,3 @@ def create_app(config_name):
 
 
     return app
-    app.config["MONGO_URI"] = "mongodb://localhost:27017/myDatabase"
