@@ -1,13 +1,16 @@
 import csv
 import json
-from pymongo import mongo_client
+from pymongo import MongoClient
 
 
 
 file = 'cleaned.csv'
 json_file = 'output.json'
+
+#database settings
 client = MongoClient('mongodb://localhost:27017')
 db = client.pymongo_dev
+infos = db.infos
 
 #Read CSV File
 def read_CSV(file, json_file):
@@ -23,7 +26,19 @@ def read_CSV(file, json_file):
 def convert_write_json(data, json_file):
     with open(json_file, "w") as f:
         f.write(json.dumps(data, sort_keys=False, indent=4, separators=(',', ': '))) #for pretty
-        # f.write(json.dumps(data))
+    read_json()
+
+#read from json
+def read_json():
+    with open(json_file) as f:
+        data = json.load(f)
+        print(data)
+
+
+#save to database
+def save_json_data():
+    new_result = infos.insert_many(output)
+    print('Multiple data: {0}'.format(new_result.inserted_ids))
 
 
 read_CSV(file,json_file)
