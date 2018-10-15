@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dce699b3-276e-432e-9811-37290158c576" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/converter.py" beforeDir="false" afterPath="$PROJECT_DIR$/converter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,6 +24,7 @@
         <counts>
           <entry key="csv" value="1" />
           <entry key="json" value="1" />
+          <entry key="md" value="1" />
           <entry key="output" value="1" />
           <entry key="py" value="2" />
           <entry key="sh" value="1" />
@@ -32,6 +34,7 @@
         <counts>
           <entry key="Bash" value="1" />
           <entry key="JSON" value="1" />
+          <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="Python" value="2" />
         </counts>
@@ -39,14 +42,18 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Python Console" value="13" />
-          <entry key="py" value="407" />
+          <entry key="json" value="1" />
+          <entry key="md" value="20" />
+          <entry key="py" value="568" />
           <entry key="sh" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="25" />
-          <entry key="Python" value="420" />
+          <entry key="JSON" value="1" />
+          <entry key="Markdown" value="20" />
+          <entry key="Python" value="581" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -69,13 +76,25 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/converter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+            <state relative-caret-position="224">
+              <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <marker date="1539639197414" expanded="true" signature="807:889" ph="..." />
-                <marker date="1539639197414" expanded="true" signature="954:1099" ph="..." />
+                <marker date="1539640337441" expanded="true" signature="829:911" ph="..." />
+                <marker date="1539640337441" expanded="true" signature="1180:1312" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="15">
+                <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -83,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/output.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="90">
+              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -113,6 +132,8 @@
       <list>
         <option value="$PROJECT_DIR$/run.sh" />
         <option value="$PROJECT_DIR$/tests.py" />
+        <option value="$PROJECT_DIR$/output.json" />
+        <option value="$PROJECT_DIR$/spec.md" />
         <option value="$PROJECT_DIR$/converter.py" />
       </list>
     </option>
@@ -172,7 +193,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1366" height="738" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24944155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -185,7 +205,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32730263" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32730263" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32894737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -217,26 +237,36 @@
     <entry file="file://$PROJECT_DIR$/cleaned.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/output.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/output">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-315" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="44" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/output.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/converter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        <state relative-caret-position="224">
+          <caret line="48" column="19" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <marker date="1539639197414" expanded="true" signature="807:889" ph="..." />
-            <marker date="1539639197414" expanded="true" signature="954:1099" ph="..." />
+            <marker date="1539640337441" expanded="true" signature="829:911" ph="..." />
+            <marker date="1539640337441" expanded="true" signature="1180:1312" ph="..." />
           </folding>
         </state>
       </provider>
