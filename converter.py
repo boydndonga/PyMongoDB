@@ -3,7 +3,6 @@ import json
 from pymongo import MongoClient
 
 
-
 file = 'cleaned.csv'
 json_file = 'output.json'
 
@@ -40,16 +39,14 @@ def read_json():
 def save_json_data():
     output = read_json()
     new_result = infos.insert_many(output)
-    print('data saved succesfully   ')
+    print('data saved succesfully ')
     # print('Multiple data: {0}'.format(new_result.inserted_ids))
 
 #retrieve data from db
 def get_db_data():
-    my_cursor = infos.find({}) # get all data
-    my_cursor = infos.find({"First Name": "Mohamed"}) # get specific data
-    print(my_cursor)
-    # for d in my_cursor:
-    #     print(my_cursor)
+    my_cursor = list(infos.find({}))
+    print(my_cursor[0])
+
 
 
 read_CSV(file,json_file)
