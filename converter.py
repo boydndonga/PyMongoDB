@@ -26,7 +26,6 @@ def convert_write_json(data, json_file):
     with open(json_file, "w") as f:
         f.write(json.dumps(data, sort_keys=False, indent=4, separators=(',', ': '))) #for pretty
         save_json_data()
-        get_db_data()
 
 #read from json
 def read_json():
@@ -49,4 +48,4 @@ def get_db_data():
 
 
 
-read_CSV(file,json_file)
+# read_CSV(file,json_file)
